@@ -21,6 +21,9 @@ p {
 .content__inner {
   display: flex;
 }
+.content__inner--hide {
+  display: none;
+}
 .content-item {
   margin-bottom: 40px;
   width: 270px;
@@ -133,6 +136,7 @@ p {
   background-color: transparent;
   border: none;
   transition: transform 0.2s linear;
+  outline: none;
 }
 .filter__button--all {
   margin-top: 30px;
@@ -380,5 +384,10 @@ p {
   }
   .metro-checkbox_label--big {
     width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .content-item {
+    margin: 20px auto;
   }
 }

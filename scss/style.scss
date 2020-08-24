@@ -29,6 +29,9 @@ p {
 .content {
     &__inner {
         display: flex;
+        &--hide {
+            display: none;
+        }
     }
     &-item {
         margin-bottom: 40px;
@@ -146,6 +149,7 @@ p {
             background-color: transparent;
             border: none;
             transition: transform .2s linear;
+            outline: none;
         }
         &--all {
             margin-top: 30px;
@@ -390,6 +394,7 @@ p {
     display: none;
 }
 
+
 @media(max-width: 991px) {
     .content {
         &__inner {
@@ -412,6 +417,13 @@ p {
                     width: 100%;
                 }
             }
+        }
+    }
+}
+@media(max-width: 576px) {
+    .content {
+        &-item {
+            margin: 20px auto;
         }
     }
 }
