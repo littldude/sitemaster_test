@@ -166,7 +166,7 @@
                             <!-- /.col-4 -->
                         </div>
                         <!-- /.row -->
-                        
+
                         <div class="content__inner--hide">
                             <div class="row content__inner">
                                 <div class=" col-12 col-sm-6 col-xl-4">
@@ -241,7 +241,7 @@
                             </div>
                             <!-- /.row -->
                         </div>
-                        <!-- /.content__inner--hide -->
+                        <!-- /.content__hide -->
                         
                         <div class="content__button">
                             <button class="content__button--item">
@@ -271,11 +271,11 @@
                                     </button> 
                                     <!-- /.filter__button -->
                                 </div>
-                                <!-- /.filter__section--header -->
+                                <!-- /.filter__header -->
                                 <div class="wrapper">
                                     <form class="metro__form">
                                         <input class="metro-checkbox" type="checkbox" name="number" id="item-1">
-                                        <label class="metro-checkbox_label" for="item-1"> <10 </label>
+                                        <label class="metro-checkbox_label" for="item-1"> &lt;10 </label>
         
                                         <input class="metro-checkbox" type="checkbox" name="number" id="item-2">
                                         <label class="metro-checkbox_label" for="item-2"> 10-20 </label>
@@ -303,7 +303,7 @@
                                     </button> 
                                     <!-- /.filter__button -->
                                 </div>
-                                <!-- /.filter__section--header -->
+                                <!-- /.filter__header -->
                                 <div class="wrapper">
                                     <form class="dealine__form">
                                         <input class="deadline-radio" type="radio" name="time" id="radio-1">
@@ -333,7 +333,7 @@
                                     </button> 
                                     <!-- /.filter__button -->
                                 </div>
-                                <!-- /.filter__section--header -->
+                                <!-- /.filter__header -->
     
                                 <div class="wrapper">
                                     <form class="options__form">
@@ -350,7 +350,7 @@
                                         <label class="options-label" for="check-4">Панорамные окна</label>
         
                                         <input class="options-checkbox" type="checkbox" name="options" id="check-5">
-                                        <label class="options-label" for="check-5">Малоэтажный (<10 этажей) </label>
+                                        <label class="options-label" for="check-5">Малоэтажный (&lt;10 этажей) </label>
                                     </form>
                                     <div class="more">
                                         <form class="options__form">
@@ -424,7 +424,11 @@
         $('.filter__button--reset').click(function() {
             $('input:checked').prop('checked', false);
         });
-        
+
+        $('.metro-checkbox_label--big').click(function() {
+            $('.metro-checkbox').prop('checked', false);
+        });
+
     });
     </script>
 
