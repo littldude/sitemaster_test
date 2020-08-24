@@ -1,7 +1,8 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -19,6 +20,8 @@ p {
 }
 
 .content__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .content__inner--hide {
@@ -51,6 +54,8 @@ p {
 }
 .content-item__cards-link:hover {
   opacity: 0.9;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 .content-item__descr {
@@ -73,15 +78,30 @@ p {
   color: #8F8F8F;
 }
 .content__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .content__button--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 40px;
   height: 40px;
   border: none;
@@ -115,9 +135,15 @@ p {
 }
 .filter__section--header {
   padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #111111;
 }
 .filter__button {
@@ -127,6 +153,8 @@ p {
 }
 .filter__button:hover {
   opacity: 0.8;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 .filter__button--dropdown {
@@ -135,7 +163,11 @@ p {
   height: 20px;
   background-color: transparent;
   border: none;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
   transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
   outline: none;
 }
 .filter__button--all {
@@ -166,11 +198,15 @@ p {
   height: 8px;
 }
 .filter__switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .metro__form {
   margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .metro-checkbox {
@@ -181,12 +217,20 @@ p {
   color: #ffffff;
   border: none;
   border-radius: 2px 0px 0px 2px;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 .metro-checkbox_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 69px;
   height: 50px;
   color: #AFAFAF;
@@ -203,14 +247,21 @@ p {
 }
 
 .deadline__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .deadline-radio {
   display: none;
 }
 .deadline-radio:checked + .deadline-label::before {
   border: 5px #F03B8C solid;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 .deadline-radio:checked + .deadline-label {
@@ -218,8 +269,12 @@ p {
 }
 .deadline-label {
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px;
   color: #5F5F5F;
   font-weight: 400;
@@ -236,8 +291,13 @@ p {
 }
 
 .options__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .options-checkbox {
   display: none;
@@ -254,8 +314,12 @@ p {
 .options-label {
   position: relative;
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px;
   color: #5F5F5F;
   font-weight: 400;
@@ -291,6 +355,8 @@ p {
 }
 .options__more:hover {
   opacity: 0.8;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
@@ -308,7 +374,9 @@ p {
   background-color: #F03B8C;
 }
 .switch-toggle:checked + .switch-label::before {
-  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+          transform: translateX(20px);
 }
 .switch-label {
   display: block;
@@ -318,6 +386,8 @@ p {
   right: 0;
   bottom: 0;
   background-color: #8F8F8F;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50px;
   cursor: pointer;
@@ -331,6 +401,8 @@ p {
   height: 16px;
   border-radius: 100%;
   background-color: #ffffff;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 .switch-text {
@@ -354,13 +426,19 @@ p {
   position: absolute;
   top: 3px;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   width: 13px;
   height: 13px;
 }
 .icon-arrow__rotated {
-  transform: rotate(180deg);
-  transform-origin: 50% 50%;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
 .more {
